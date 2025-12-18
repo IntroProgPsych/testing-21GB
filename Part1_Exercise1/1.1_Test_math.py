@@ -12,9 +12,17 @@ class TestAddFunction(unittest.TestCase):
     # - Use clear method names, e.g. test_add_positive_numbers, etc.
 
     # write your tests here:
-    pass
    
+    def test_add_positive_numbers(self):
+        self.assertEqual(add(2, 3), 5)
+
+    def test_add_negative_numbers(self):
+        self.assertEqual(add(-2, -3), -5)
+
+    def test_add_positive_and_negative(self):
+        self.assertEqual(add(5, -3), 2)
 
 
 if __name__ == "__main__":
     unittest.main()
+
